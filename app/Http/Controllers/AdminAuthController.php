@@ -11,8 +11,7 @@ use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\Admin;
 use App\Models\Roles;
-// use App\Models\RolePerm;
-// use App\Models\Permission;
+
 
 
 class AdminAuthController extends Controller

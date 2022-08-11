@@ -99,7 +99,7 @@ class AuthController extends Controller{
    public function logout(Request $request){
         $user = Auth::user()->token();
         $user->revoke();
-        return 'Successfully logged out'; // modify as per your need
+        return 'Successfully logged out'; 
 }
 
 }
