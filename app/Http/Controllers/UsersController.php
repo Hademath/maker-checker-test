@@ -123,14 +123,14 @@ public static function get_admin_info($officer)
             $user_update = User::where('id', $id)->update(['firstname' => $firstname,'lastname' => $lastname, 'email' => $email]);
     
      //THIS  SEND EMAIL TO  CUSTOMER OFFICERS ABOUT THE UPDATE MADE TO PARTICULAR USER,
-    //   $mailData = [
-    //         'title' => 'Mail from Maker Checker',
-    //         'body' => 'The user details has been updated successfully, kindly notify the user about the update'
-    //     ];
+      $mailData = [
+            'title' => 'Mail from Maker Checker',
+            'body' => 'The user details has been updated successfully, kindly notify the user about the update'
+        ];
          
-    //     Mail::to($admin_mail )->send(new SendMail($mailData));
+        Mail::to($admin_mail)->send(new SendMail($mailData));
            
-     //   // dd("Email is sent successfully.");
+       // dd("Email is sent successfully.");
 
         if ($user_update) 
             $this->result->status = true;

@@ -119,9 +119,10 @@ sample body:
     "lastname":"Crownaire",
     "email":"zainb@gmail.com"
 }
-If the successfully edited, emmail will be sent to customer officer that the approved users a]has been edited or updated successfully. If
-NOTE: the email is not working, google recently bring down the third party accessibilty for security purpose on the gmail, so It can't create 
-connection with the stmp. This can be done with other third party OR setting up mail forwarding on the website to be able to implement this. 
+If the successfully edited, emmail will be sent to customer officer that the approved users ahas been edited or updated successfully. If
+NOTE: the email emailing is working perfectly well now, The super admin, when done editing the users details, email will be sent to all customer officer that update has been done to there apprved details; 
+
+I use my gmail for testing, The app token will be deleted soon admin should be registered and ONly customer officer will receive email
 ## GET: Authorise admin can view pending request
 
 end point : http://127.0.0.1:8000/api/admin/pending_request
